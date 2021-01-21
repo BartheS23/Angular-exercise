@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<body>
+<h1>{{title}}</h1>
+
+<!-- Task 1 -->
+<h2>Task 1</h2>
+<form class="formular">
+  <mat-form-field class="formField">
+    <mat-label>
+      {{inputField.value}}
+      <span *ngIf="!inputField.value">Write something in the input field to change this label</span>
+    </mat-label>
+    <input #inputField matInput placeholder="Ex. Hello World">
+  </mat-form-field>
+</form>
+
+<!-- Task 2 -->
+<h2>Task 2</h2>
+<mat-tab-group class="tabsStyle" mat-align-tabs="center" mat-stretch-tabs>
+  <mat-tab label="Task 1">
+    <p>In the first taks I have to display an angular material input field with the
+    default text "Write something in the input field to change this label".</p>
+    <p>If the user types any characters in this input field, the label should be updated accordingly.</p>
+  </mat-tab>
+  <mat-tab label="Task 2">
+    <p>In the second taks I have to display 2 tabs with different content.</p>
+    <p>If the user clicks on one of the tabs, the main content of the page changes accordingly.</p>
+  </mat-tab>
+</mat-tab-group>
+
+
+</body>
+</html>
